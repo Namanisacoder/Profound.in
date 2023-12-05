@@ -1,0 +1,222 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --primary-text-color: white ;
+    --secondary-text-color: #d8f3dc ;
+}
+
+body{
+    display: flex;
+    /* background-color: #0e0e0e; */
+    justify-content: center;
+    align-items: center;  
+    background: url(../assets/bus-pic.jpg) no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center;
+}
+
+.intro{
+    font-weight: 900;
+    color:  var(--primary-text-color);
+    transition: 1s;
+}
+
+.intro:hover{
+    color: var(--secondary-text-color);
+}
+
+
+.wrapper{
+    margin: 100px 0px;
+    justify-content: center;
+    align-items: center;  
+    width: 420px;
+    background: transparent;    
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+.wrapper h1{
+    font-size: 25px;
+    text-align: center;
+}
+
+.wrapper .input-box{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px ;
+}
+
+.input-box input::placeholder{
+    color: #fff;
+}
+
+.input-box i {
+    /* position: fixed; */
+    top: 20px;
+    right: -220px;
+    transform: translate(-50%);
+    font-size: 20px;
+}
+
+.wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.remember-forgot label input{
+    accent-color: #fff;
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+
+
+.wrapper .btn{  
+    height: 45px;
+    width: 100%;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 45px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.wrapper .btn:hover{
+    background-color: rgba(255, 255, 255, .2);
+    animation-delay: 2s;
+
+}
+
+
+.wrapper .register-link{
+    font-size: 14.5px;
+    margin: 20px 0 15px;
+    text-align: center;
+}
+
+
+.register-link p a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover{
+    text-decoration: underline;
+}
+
+
+.wrapper h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+
+
+
+
+.input-box i{
+padding-top: 15px;
+right: px;
+}
+
+
+
+/* <===== Back button =====> */
+.back{
+    position: fixed;
+  }
+  
+  .back i{  
+    align-content: left;
+    justify-content: left;
+    font-size: 65px;
+    color: white;
+    transition: 1s ease-in
+  }
+  
+  .back i:hover{
+    color: var(--secondary-text-color);
+  }
+
+  #registrationForm {
+    justify-content: center;
+    align-items: center;
+  }
+
+.left{
+    display: flex;
+    align-items: left;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .wrapper {
+        width: 80%; /* Adjust the width for smaller screens */
+        padding: 20px; /* Adjust padding */
+    }
+
+    .input-box i {
+        right: -120px; /* Adjust the icon position for smaller screens */
+    }
+
+    .back i {
+        font-size: 35px; /* Adjust back button icon size */
+    }
+
+    .intro {
+        font-size: 20px; /* Adjust the intro text size for smaller screens */
+    }
+
+    .input-box input {
+        font-size: 14px; /* Adjust input font size for smaller screens */
+    }
+
+    .wrapper .btn {
+        font-size: 14px; /* Adjust button font size for smaller screens */
+    }
+
+    .register-link {
+        font-size: 12px; /* Adjust register link font size for smaller screens */
+    }
+}
